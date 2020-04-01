@@ -1,0 +1,68 @@
+@mixin contactMaxWidth {
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+@mixin generalMaxWidth {
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 50px;
+    @media only screen and (max-width: 600px) {
+        padding: 0 20px;
+    }
+}
+
+@mixin goldTitle($fontSize: 55px) {
+    color: $color-gold;
+    font-family: 'Gelasio', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    @media only screen and (max-width: 600px) { 
+        font-size: 35px;
+        letter-spacing: 1.27px;
+        line-height: 50px;
+    }
+    @media only screen and (max-width: 350px) { 
+        font-size: 25px;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+}
+
+@mixin btn--gold--outline {
+    display: inline-block;
+    color: $color-gold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    line-height: 17px;
+    padding: 15px 30px;
+    border: 1px solid $color-gold;
+}
+
+@mixin respond-to($max-width : 1040px) {
+    @media only screen and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin sm-mobile {
+    @media only screen and (max-width: 350px) {
+        @content;
+    }
+}
