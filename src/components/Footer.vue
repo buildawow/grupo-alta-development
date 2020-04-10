@@ -28,10 +28,10 @@
                         <a href="mailto:administracion@grupoalta.net">administracion@grupoalta.net</a>
                     </li>
                     <li>
-                        <a href="#">2 calle 10-59 zona 14, Guatemala</a>
+                        2 calle 10-59 zona 14, Guatemala
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.waze.com/livemap/directions/guatemala/zona-14,-guatemala/grupo-alta?place=w.176619666.1766131123.16297254">
                             <img src="@/assets/footer/waze_logo.svg" alt="Waze">
                         </a>
                     </li>
@@ -39,7 +39,7 @@
             </div>
             <div class="footer__container__credits">
                 <p>
-                    <span>Grupo Alta 2020.</span> Todos los derechos reservados Made by <span>Buildawow</span>
+                    <span>Grupo Alta 2020.</span> Todos los derechos reservados Made by <a href="https://buildawow.com/" target="_blank">Buildawow</a>
                 </p>
             </div>
             <img class="footer__container__isotype" src="@/assets/footer/footer-isotype.png" alt="Footer isotype">
@@ -131,6 +131,11 @@ export default {
                 }
                 ul li {
                     margin: 10px 0;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 13px;
+                    letter-spacing: 1.04px;
+                    line-height: 35px;
                 }
                 ul li a {
                     color: white;
@@ -159,7 +164,7 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                span {
+                span, a{
                     color: white;
                 }
             }

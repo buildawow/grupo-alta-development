@@ -32,7 +32,7 @@
 
                 <div class="next-link">
 
-                    <a class="home-icon" href="/grupo-alta-demo#companies" >
+                    <a class="home-icon" href="../" >
                         <img src="@/assets/internals/assets/home.svg" alt="menu">
                     </a>
                     

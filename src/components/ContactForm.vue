@@ -6,7 +6,7 @@
             <ul>
                 <li><a href="mailto:info@grupoalta.com.gt"><strong>Email.  info@grupoalta.com.gt</strong></a></li>
                 <li><a href="tel:502-2374-5000"><strong>T. 2374-5000</strong></a></li>
-                <li>Facebook <span>•</span> Instagram</li>
+                <li><a href="https://www.facebook.com/grupoaltagt" target="_blank">Facebook</a> <span>•</span> <a href="https://www.instagram.com/grupoaltagt/" target="_blank">Instagram</a></li>
             </ul>
             <h3>Forma parte de nuestro equipo</h3>
             <p>
@@ -16,10 +16,10 @@
         </div>
         <div class="contact-main__container__form">
             <form action="" v-on:submit="submitForm" name="submit-to-google-sheet">
-                <input type="text" name="name" placeholder="Nombre" v-model="name">
-                <input type="email" name="email" placeholder="Correo electrónico" v-model="email">
-                <input type="phone" name="phone" placeholder="Teléfono" v-model="phone">
-                <textarea name="message" id="" rows="10" placeholder="Escribe tu comentario o duda acá" v-model="message"></textarea>
+                <input type="text" name="name" placeholder="Nombre" v-model="name" required>
+                <input type="email" name="email" placeholder="Correo electrónico" v-model="email" required>
+                <input type="phone" name="phone" placeholder="Teléfono" v-model="phone" required>
+                <textarea name="message" id="" rows="10" placeholder="Escribe tu comentario o duda acá" v-model="message" required></textarea>
                 <button type="submit">{{ buttonText }}</button>
             </form>
         </div>
@@ -51,6 +51,7 @@ export default {
             },
             submitForm(e) {
                 e.preventDefault()
+                this.buttonText = "Enviando tus datos...";
                 console.log(document.forms['submit-to-google-sheet'])
                 axios.post('https://script.google.com/macros/s/AKfycbzhDDyqb3deCd4BV8ZJDxuOTTBnQ-PZz2LqtS1fjjovbM3PJA/exec', 
                 new FormData(document.forms['submit-to-google-sheet']))
@@ -60,7 +61,7 @@ export default {
                             icon: 'success',
                             title: 'Email enviado',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 500
                         })
                         console.log(response)
                         this.clearForm('Gracias!')
@@ -171,6 +172,7 @@ export default {
                         letter-spacing: 0.88px;
                         line-height: 17px;
                         margin-bottom: 40px;
+                        cursor: pointer;
                         &:hover, &:focus {
                             outline-color: $color-gold;
                         }

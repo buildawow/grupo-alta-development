@@ -7,7 +7,8 @@
                     Síguenos en nuestras redes y conoce más de Grupo Alta
                 </h5>
                 <p class="tags">
-                    Facebook  •  Instagram   #GrupoAltaGt
+                    
+                    <a href="https://www.facebook.com/grupoaltagt" target="_blank" >Facebook</a>  •  <a href="https://www.instagram.com/grupoaltagt/" target="_blank" >Instagram</a>   #GrupoAltaGt
                 </p>
             </div>
             <figure v-for="socialThumbnail in socialThumbnails" :key="socialThumbnail.id">
@@ -81,12 +82,15 @@ export default {
                     font-weight: lighter;
                 }
                 .tags {
-                    color: $color-gray;
+                    
                     font-family: 'Montserrat', sans-serif;
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 24px;
                     text-transform: capitalize;
+                    a{
+                        color: $color-gray;
+                    }
                 }
             }
         }
