@@ -4,14 +4,14 @@
         <div class="contact-main__container__invitation">
             <h1>Contáctanos</h1>
             <ul>
-                <li><a href="mailto:info@grupoalta.com.gt"><strong>Email.  info@grupoalta.com.gt</strong></a></li>
+                <li><a href="mailto:info@grupoalta.net"><strong>Email.  info@grupoalta.net</strong></a></li>
                 <li><a href="tel:502-2374-5000"><strong>T. 2374-5000</strong></a></li>
                 <li><a href="https://www.facebook.com/grupoaltagt" target="_blank">Facebook</a> <span>•</span> <a href="https://www.instagram.com/grupoaltagt/" target="_blank">Instagram</a></li>
             </ul>
             <h3>Forma parte de nuestro equipo</h3>
             <p>
                 Si quieres formar parte de Grupo Alta o alguna de 
-                nuestras empresas, envíanos tu CV a <a href="mailto:contrataciones@grupoalta.com.gt"><strong>contrataciones@grupoalta.com.gt</strong></a>
+                nuestras empresas, envíanos tu CV a <a href="mailto:contrataciones@grupoalta.net"><strong>contrataciones@grupoalta.net</strong></a>
             </p>
         </div>
         <div class="contact-main__container__form">

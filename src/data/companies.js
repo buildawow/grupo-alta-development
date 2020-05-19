@@ -54,9 +54,8 @@ export default [
         slug: 'helados-adela',
         name: 'Helados Adela',
         slogan: 'Helados con amor',
-        phrase: `Fundada en el año 2016, La Esquina es el primer food hall guatemalteco. 
-        El cual rememora las tiendas de barrio y los mercados guatemaltecos, 
-        brindando una experiencia fuera de lo común a quien lo visita. `,
+        phrase: `Inspirados en el amor de una abuelita Adela trae lo mejor de los helados en una versión de los 50´s. Helados 100%
+        artesanales llenos de amor en z.4`,
         images: {
             logo: 'adela.jpg',
             banner: {
